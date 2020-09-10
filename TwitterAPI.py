@@ -8,10 +8,10 @@ import json
 
 # Store Twitter account keys in a dict
 access = {}
-access['CONSUMER_KEY'] =  'iZasx26ZWd8Uk36Nq1kgI1obk'
-access['CONSUMER_SECRET'] = 'hh7Ke3opBMSEY2ZuZu1VysT7Q4ufOg2LSRhdivLcsWgtcLNMxq'
-access['ACCESS_TOKEN']= '869904060-JwRBLQ3cL7YmGF6M94PJCOwyOfvnJOwMTg0AyZ7b'
-access['ACCESS_SECRET'] = 'SD8OTf7gqadHwi8uJP2Xcw8tveaUGQqbi7UP5hk1WY4Fl'
+access['CONSUMER_KEY'] =  ''
+access['CONSUMER_SECRET'] = ''
+access['ACCESS_TOKEN']= ''
+access['ACCESS_SECRET'] = ''
 
 with open ("twitter_access.json", "w") as file:
     json.dump(access, file)
