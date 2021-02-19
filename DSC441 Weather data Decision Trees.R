@@ -23,7 +23,7 @@ library(riem)
 
 # Hourly Weather Data CSV 
 # gDrive location: https://drive.google.com/open?id=1tr9ao5vGEUy43JzQd-rrYIshFvzjaMrZ
-#hw60 = read.csv('/Users/michaelsmith/Desktop/data/hw60.csv', sep = ',')
+#hw60 = read.csv('/Users/Desktop/data/hw60.csv', sep = ',')
 hrWsmall = read.csv("hrWsmall.csv", sep = ',')
 
 
@@ -116,7 +116,7 @@ ggplot(data=hw60, aes(x=tmpf,y=dwpf)) + geom_point()
 # library(viridis)
 
 
-# locDf = read.csv("/Users/michaelsmith/Desktop/data/airCodes.csv", sep = ",")
+# locDf = read.csv("/Users/Desktop/data/airCodes.csv", sep = ",")
 
 # ggplot() + geom_raster(data = locDf, aes(x=lon, y=lat)) + 
 #   coord_fixed(ratio = 1) +
@@ -152,7 +152,7 @@ library("stargazer")
 #Create Sample Size
 #hrWsmall = sample_n(hw60, (0.1*nrow(hw60)))
 smp_size = floor(0.75 * nrow(hrWsmall))
-#write.csv(hrWsmall,"/Users/michaelsmith/Desktop/data/hrWsmall.csv", row.names = FALSE)
+#write.csv(hrWsmall,"/Users/Desktop/data/hrWsmall.csv", row.names = FALSE)
 ## set the seed to make your partition reproducible
 set.seed(1234)
 train_ind <- sample(seq_len(nrow(hrWsmall)), size = smp_size)
